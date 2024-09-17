@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home </title>
+    <script src="https://kit.fontawesome.com/590b7d51d6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html , body{
+        
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden; /* Prevent horizontal scroll caused by animation */
+            scroll-behavior: smooth; /* Ensure smooth scrolling */
+        }
+        
+        html {
+            scroll-snap-type: y mandatory;
+        }
+        
+        body {
+            scroll-snap-align: start;
+        }
+        
+        .d1
+        {
+            width: 100%;
+            /* height: 600%; */
+            background-color:whitesmoke;
+        
+            position: relative; /* Allows it to move without affecting other content */
+            
+            animation-name: moveUp;
+            animation-duration: 2s;
+            transition-timing-function: ease-out;
+            animation-fill-mode: forwards;
+        
+        }
+        
+        @keyframes moveUp 
+        {
+            0% 
+            {
+                transform: translateY(100%); /* Start from below the viewport */
+                opacity:0.1 ;
+            }
+        
+            100% 
+            {
+                transform: translateY(0); /* End at its original position */
+                opacity: 1; 
+            }
+        }
+        
+        
+        
+        /* header start */
+        
+        .header{
+            width: 100%;
+            position: sticky;
+            top: 0; 
+            z-index: 1;
+            background-color:whitesmoke;
+        }
+        
+        /* logo header start */
+        .logo-header{
+            width: 100%;
+            height: 60%;
+            padding: 10px;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .horizontal-logo{
+            width: 200px;
+            height: 100%;
+        }
+        
+        
+        .logo-header a
+        {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .start-button-nav{
+            width: 100px;
+            height: 30px;
+            background-color:rgb(28, 30, 30) ;
+            color: white;
+            font-weight: 400; 
+            border-radius: 10px ;
+        }
+        
+        /* logo header end */
+        
+        .nav{
+        
+            width: 100%;
+            height: 50px;
+            /* border: 1px solid black; */
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        .nav-ul{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            /* border: 1px solid black; */
+        }
+        
+        .nav-li
+        {   width: 100%;
+            height: 100%;
+            /* border: 1px solid black; */
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .nav-li:hover{
+        
+            color: aliceblue;
+            background-color: rgb(198, 121, 121);
+        }
+        .sign-in{
+            display: none;
+        }
+        
+        @media (min-width:768px) {
+            .sign-in{
+                display: flex;
+            }
+        }
+        
+        
+        /* nav end */
+        
+        
+        </style>
+</head>
+
+<body>
+
+    <div class="d1">
+
+        <header class="header">
+
+            <div class="logo-header">
+                <img src="assets/logo/horizontal logo.png" class="horizontal-logo">
+
+                <div class="sign-in-mob">
+                    <a href="login.html">Log in</a>
+
+                    <button class="start-button-nav"> Start for free</button>
+                </div>
+            </div>
+            <!-- logo header end -->
+
+            <div class="nav">
+                <ul class="nav-ul">
+
+                    <li class="nav-li">
+                        <a href="index.html" class="a-link"> Home </a>
+                    </li>
+
+                    <li class="nav-li">
+                        <a href="feature.html" class="a-link"> Feature </a>
+                    </li>
+
+                    <li class="nav-li">
+                        <a href="categories.html" class="a-link"> Catagories </a>
+                    </li>
+
+                    <li class="nav-li">
+                        <a href="resource.html" class="a-link"> Resources </a>
+                    </li>
+
+                    <li class="nav-li">
+                        <a href="pricing.html" class="a-link"> Pricing </a>
+                    </li>
+
+                    <li class="nav-li sign-in ">
+                        <a href="login.html" class="a-link">Log in</a>
+                    </li>
+
+                    <li class="sign-in ">
+                        <button> Start for free</button>
+                    </li>
+
+                </ul>
+
+                <hr />
+            </div>
+            <!-- nav div end -->
+
+        </header>
+        <!-- header div end -->
+
+
+        <!-- b1 start -->
+        <div class="b1">
+            <div class="b1-child">
+                <h2> 
+                    <q>
+                        Welcome to Your Ultimate Task Manager.
+                    </q>
+                </h2>
+                
+                <br />
+                
+                <p>
+                    Simple way to manage your task. Stay organized, stay productive, and conquer your day with ease
+                </p>
+    
+                <br />
+    
+                <button class="start-button">
+                    Start for free
+                </button>
+    
+                <br /><br />
+            </div>
+
+            
+            <div class="b1-child">
+                <img src="assets/task-management-removebg-preview.png" >
+            </div>
+
+            
+
+        </div>
+        <!-- b1 end -->
+
+        <div class="b2">
+            <h2>
+                Tr 101: Your Essential Guide
+            </h2>
+            <br/>
+
+            <p>
+                A Productivity Powerhouse: Discover how Tr's simplicity, flexibility, and power can transform your workflow. Explore our guide for getting started with Tr.
+            </p>
+        </div>
+
+        <!-- b2 ends -->
+        
+        <div class="b3">
+            <div class="b3-child">
+                
+                <h3>BOARDS</h3>
+
+                    <p>
+                        Think of boards as virtual workspaces where you can organize your projects and tasks. Each board represents a specific project or area of focus, allowing you to keep your work organized and easily accessible.
+                    </p>
+
+                <img src="assets/board-removebg-preview.png" alt="BOARDS">
+
+            </div>
+
+            <div class="b3-child">
+                <h3>LISTS</h3>
+                    <p>
+                        Think of boards as virtual workspaces where you can organize your projects and tasks. Each board represents a specific project or area of focus, allowing you to keep your work organized and easily accessible.
+                    </p>
+
+                    <img src="assets/list.png" alt="LISTS">
+            </div>
+
+            <div class="b3-child">
+                <h3>CARDS</h3>
+                    <p>
+                        Think of boards as virtual workspaces where you can organize your projects and tasks. Each board represents a specific project or area of focus, allowing you to keep your work organized and easily accessible.
+                    </p>
+                    <img src="assets/card.jpg" alt="BOARDS">
+            </div>
+        </div>
+        <!-- b3 ends -->
+
+        <div class="b4">
+            <div class="b4-1">
+                <p> <b>TR In Action </b></p>
+                <h3>
+                    Workflows for any project , big or small
+                </h3>
+            </div>
+            <!-- b4-1 end -->
+
+            <div class="b4-2" style=" width: 100%;">
+
+                <div style="background:linear-gradient( rgb(248, 205, 206) ,rgb(247, 168, 168))" class="TR-card">
+                    <h3>Project Management</h3>
+                    <br />
+                    <p>
+                        From initiation to completion, TR makes it easy to monitor every aspect of your next project.
+                        Designed for teams of any size, anywhere.
+                    </p>
+                </div>
+
+                <div style="background:linear-gradient( rgb(209, 247, 207) ,rgb(170, 246, 158))" class="TR-card">
+                    <h3>Meetings </h3>
+                    <br />
+                    <p>
+                        Get ready for team time that’s enjoyable and actionable. Meetings should save time, not waste it
+                        TR can help
+                    </p>
+                </div>
+
+                <div style="background:linear-gradient( rgb(241, 203, 249) ,rgb(214, 168, 247))" class="TR-card">
+                    <h3> Brainstroming</h3>
+                    <br />
+                    <p>
+                        Uncover actionable ideas by brainstorming with TR, no matter where you’re located. Collaboration
+                        is the easy part with boards, lists, and cards .
+                    </p>
+                </div>
+
+                <div style="background:linear-gradient( rgb(203, 246, 249) ,rgb(162, 247, 246))" class="TR-card">
+                    <h3>Task Management</h3>
+                    <br />
+                    <p>
+                        TR advanced checklists give you the power to add more context to your tasks by assigning team
+                        members and due dates to checklist items, increasing visibility and keeping your team
+                        accountable.</p>
+                </div>
+
+            </div>
+            <!-- b4-2 end -->
+        </div>
+
+        <!-- b4 ends -->
+         
+        <div class="b5">
+            <div class="b5-1">
+                <img src="assets/tomorrow.png">
+            </div>
+            <div class="b5-2">
+                <div class="b5-2-child">
+                    <h4>Clear your mind</h4>
+                    <br/>
+                    <h2>
+                        Capture tasks as they come to you
+                    </h2>
+                    <br/>
+                    <p>
+                        We've dedicated years to perfecting our tool to act as an extension of your mind. Quickly capture and arrange tasks using smooth, intuitive language.
+                    </p>
+                </div>
+
+                <div class="b5-2-child">
+                    <h4>
+                        Focus on what’s important
+                    </h4>
+                    <br/>
+                    <h2>
+                        Keep things organized and clear
+                    </h2>
+                    <br/>
+                    <p>
+                        Gain peace of mind by categorizing tasks into Today, Upcoming, or using custom filters. View only what's essential, precisely when it's needed.
+                    </p>
+                </div>
+
+                <div class="b5-2-child">
+                    <h4>
+                        Plan with confidence
+                    </h4>
+                    <br/>
+                    <h2>
+                        Streamline your scheduling
+                    </h2>
+                    <br/>
+                    <p>
+                        Maximize your time. Set deadlines, visualize your week in calendar mode, and easily set up recurring tasks.
+                    </p>
+                </div>
+
+                <div class="b5-2-child">
+                    <h4>
+                        Organize your teamwork, too
+                    </h4>
+                    <br/>
+                    <h2>
+                        A hub for your team's tasks
+                    </h2>
+                    <br/>
+                    <p>
+                        Provide your team a collective space to collaborate and manage everything – integrated but distinct from your personal tasks and projects.
+                    </p>
+                </div>
+            </div>
+            <!-- b5-2 end -->
+
+        </div>
+        <!-- b5 ends -->
+        
+        <div class="b6">
+            <div class="b6-child1">
+                <h2>
+                    Choose your plan
+                </h2>
+                
+                <p>
+                    Create, share, and collaborate with your favorite apps—all in one place.
+                </p>
+            </div>
+            <div class="b6-child2">
+                <img src="assets/product.jpg">
+            </div>
+        </div>
+        <!-- b6 ends -->
+
+
+        <!-- footer start -->
+        <footer>
+
+            <div class="footer-1">
+                <h2>
+                    Trusted by thousands, our 4.5-star rating on the Play Store
+                </h2>
+                <br />
+                <p>
+                    This proves we’re your go-to for seamless task management. Join the satisfied users who’ve already
+                    turned chaos into clarity!
+                </p>
+                <br />
+
+                <button class="start-button">
+                    Start for free
+                </button>
+
+            </div>
+            <!-- footer-1 end -->
+
+            <div class="footer-2">
+                
+
+                <!-- footer about start -->
+                <div class="footer-about">
+
+                    <h3>About Us</h3>
+                    <br />
+                    <p>Start each day with a clear plan. Let us help you turn your to-do list into a done list.</p>
+
+                </div>
+                <!-- footer about end -->
+
+                <!-- footer-Explore start -->
+                <div class="footer-explore">
+
+                    <h3>Explore</h3>
+                    <br />
+
+                    <ul class="footer-explore-ul">
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#features">Features</a>
+                        </li>
+                        <li>
+                            <a href="#categories">Categories</a>
+                        </li>
+                        <li>
+                            <a href="#resources">Resources</a>
+                        </li>
+                        <li>
+                            <a href="#pricing">Pricing</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- footer-Explore end -->
+
+                <!-- footer social start -->
+                <div class="footer-social">
+
+                    <h3>Stay Connected</h3>
+
+                    <div class="social-links">
+
+                        <a href="#">
+                            <i class="fa-brands fa-facebook  icon"></i>
+                        </a>
+                        <br />
+                        <a href="#">
+                            <i class="fa-brands fa-twitter icon"></i>
+                        </a>
+                        <br />
+                        <a href="#">
+                            <i class="fa-brands fa-instagram icon"></i>
+                        </a>
+                        <br />
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin icon"></i>
+                        </a>
+                        <br />
+
+                    </div>
+
+                </div>
+                <!-- footer social end -->
+
+                <div class="footer-tips">
+
+                    <h3>Get Productivity Tips</h3>
+                    <br />
+
+                    <p>Sign up for our newsletter and receive the latest tips, updates, and special offers.</p>
+                    <br />
+
+                    <form>
+
+                        <input type="name" placeholder="Enter your name">
+
+                        <input type="number" placeholder="Enter your number">
+
+                        <input type="email" placeholder="Enter your email">
+                        <br /><br />
+                        <button type="submit">Submit</button>
+
+                    </form>
+
+                </div>
+
+                
+
+            </div>
+            <!-- footer-2 end -->
+
+            <!-- footer-3 start -->
+            <div class="footer-3">
+
+                <p>
+                    © 2024 Your Company Name
+                    |
+                    <a href="#">Privacy Policy</a>
+
+                    |
+                    <a href="#">Terms of Service</a>
+                </p>
+
+                <p>
+                    Today’s Productivity Tip: "Set a timer for each task. It keeps you focused and boosts efficiency."
+                </p>
+
+            </div>
+            <!-- footer 3 end -->
+
+        </footer>
+        <!-- footer end -->
+
+    </div>
+    <!-- d1 end -->
+
+</body>
+
+</html>

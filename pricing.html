@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <script src="https://kit.fontawesome.com/590b7d51d6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html , body{
+        
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden; /* Prevent horizontal scroll caused by animation */
+            scroll-behavior: smooth; /* Ensure smooth scrolling */
+        }
+        
+        html {
+            scroll-snap-type: y mandatory;
+        }
+        
+        body {
+            scroll-snap-align: start;
+        }
+        
+        .d1
+        {
+            width: 100%;
+            /* height: 600%; */
+            background-color:whitesmoke;
+        
+            position: relative; /* Allows it to move without affecting other content */
+            
+            animation-name: moveUp;
+            animation-duration: 2s;
+            transition-timing-function: ease-out;
+            animation-fill-mode: forwards;
+        
+        }
+        
+        @keyframes moveUp 
+        {
+            0% 
+            {
+                transform: translateY(100%); /* Start from below the viewport */
+                opacity:0.1 ;
+            }
+        
+            100% 
+            {
+                transform: translateY(0); /* End at its original position */
+                opacity: 1; 
+            }
+        }
+        
+        
+        
+        /* header start */
+        
+        .header{
+            width: 100%;
+            position: sticky;
+            top: 0; 
+            z-index: 1;
+            background-color:whitesmoke;
+        }
+        
+        /* logo header start */
+        .logo-header{
+            width: 100%;
+            height: 60%;
+            padding: 10px;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .horizontal-logo{
+            width: 200px;
+            height: 100%;
+        }
+        
+        
+        .logo-header a
+        {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .start-button-nav{
+            width: 100px;
+            height: 30px;
+            background-color:rgb(28, 30, 30) ;
+            color: white;
+            font-weight: 400; 
+            border-radius: 10px ;
+        }
+        
+        /* logo header end */
+        
+        .nav{
+        
+            width: 100%;
+            height: 50px;
+            /* border: 1px solid black; */
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        .nav-ul{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            /* border: 1px solid black; */
+        }
+        
+        .nav-li
+        {   width: 100%;
+            height: 100%;
+            /* border: 1px solid black; */
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .nav-li:hover{
+        
+            color: aliceblue;
+            background-color: rgb(198, 121, 121);
+        }
+        .sign-in{
+            display: none;
+        }
+        
+        @media (min-width:768px) {
+            .sign-in{
+                display: flex;
+            }
+        }
+        
+        
+        /* nav end */
+        
+        
+        </style>
+        
+
+</head>
+
+<body>
+
+    <div class="d1">
+
+        <header class="header">
+
+            <div class="logo-header">
+                <img src="assets/logo/horizontal logo.png" class="horizontal-logo">
+
+                <div class="sign-in-mob">
+                    <a href="#">Log in</a>
+
+                    <button class="start-button-nav"> Start for free</button>
+                </div>
+            </div>
+            <!-- logo header end -->
+
+            <div class="nav">
+                <ul class="nav-ul">
+
+                    <li class="nav-li">
+                        <a href="index.html" class="a-link"> Home </a>
+                    </li>
+
+                    <li class="nav-li">
+                        <a href="feature.html" class="a-link"> Feature </a>
+                    </li>
+
+                    <li class="nav-li">
+                        <a href="categories.html" class="a-link"> Catagories </a>
+                    </li>
+
+                    <li class="nav-li">
+                        <a href="resource.html" class="a-link"> Resources </a>
+                    </li>
+
+                    <li class="nav-li">
+                        <a href="pricing.html" class="a-link"> Pricing </a>
+                    </li>
+
+                    <li class="nav-li sign-in ">
+                        <a href="login.html" class="a-link">Log in</a>
+                    </li>
+
+                    <li class="sign-in ">
+                        <button> Start for free</button>
+                    </li>
+
+                </ul>
+
+                <hr />
+            </div>
+            <!-- nav div end -->
+
+        </header>
+        <!-- header div end -->
+
+        <div class="p1">
+            <h1> Tailor Todoist to Your Needs </h1>
+            <br/>
+            <p> Use Todoist for free or upgrade to unlock powerful features for work and collaboration. </p>
+            <br/>
+            <button class="start-button" >Start</button>
+            
+        </div>
+        <!-- p1 ends -->
+
+        <div class="p2">
+
+            <div class="p2-child">
+                <h4>
+                    Organize Your Life, Effortlessly.
+                </h4>
+                <br/>
+
+                <h1>Free</h1>
+                <br/>
+
+                <button>
+                    Get Started
+                </button>
+                <br/>
+
+                <p class="para-1">
+                    No Cost
+                    <br/> No Commitment.
+                </p>
+                <br/>
+
+                
+                <p>
+                    Master Your Personal Tasks.
+                </p>
+                <br/>
+
+                <h2>
+                    Essential Features for Personal Organization.
+                </h2>
+                <br/>
+
+                <ul>
+                    <li>Create and Manage Tasks </li>
+                    <li>Never Forget a Thing </li>
+                    <li>Stay Top on Schedule </li>
+                    <li>Plan Your Day </li>
+                    <li>Access from Anywhere</li>
+                </ul>
+                <br/>
+
+            </div>
+            <!-- p1-child ends -->
+
+            <div class="p2-child">
+                <h4>
+                    Experience Enhanced Task Management.
+                </h4>
+                <br/>
+                
+                <h1>$4.99 per month</h1>
+                <br/>
+
+                <button>
+                    Get Started
+                </button>
+                <br/>
+
+                <p class="para-1">
+                    Cancel anytime.<br/> No commitments.
+                </p>
+                <br/>
+                
+                
+                <p>
+                    Designed for Power Users.
+                </p>
+                <br/>
+
+                <h2>
+                    Premium Features for Enhanced Productivity.
+                </h2>
+                <br/>
+
+                <ul>
+                    <li> Automate Repetitive Tasks.</li>
+                    <li> Reminder Even in WhatsApp. </li>
+                    <li> Power of AI Task Management. </li>
+                    <li> Organize Tasks Visually.</li>
+                    <li> Get Reminders on Location.</li>
+                </ul>
+                <br/>
+
+            </div>
+            <!-- p1-child ends -->
+
+            <div class="p2-child">
+                
+                <h4>
+                    Organize Your Household Effortlessly.
+                </h4>
+                <br/>
+
+                <h1>
+                    $6.33
+                </h1>
+                <br/>
+
+                <button>
+                    Get Started
+                </button>
+                <br/>
+
+                <p class="para-1">
+                    Cancel anytime. <br/> No commitments.
+                </p>
+                <br/>
+                
+                <p>
+                    Streamline Family Life with Todoist Family.
+                </p>
+                <br/>
+
+                <h2>
+                    Premium Features for Families.
+                </h2>
+                <br/>
+
+                <ul>
+                    <li>Create Family Tasks.</li>
+                    <li> Collaborate with 4 Members.</li>
+                    <li>Simplify Grocery list. </li>
+                    <li>Work Together on Projects.</li>
+                    <li>All the Benefits of Premium </li>
+                </ul>
+                <br/>
+
+            </div>
+            <!-- p1-child ends -->
+
+            <div class="p2-child">
+                
+                <h4>
+                    Collaborate Seamlessly with Your Team.
+                </h4>
+                <br/> 
+
+                <h1>$10.99 per month</h1>
+                <br/> 
+
+                <button>
+                    Try it for Free
+                </button>
+                <br/> 
+
+                <p class="para-1">
+                    Invite your team for free.<br/> No credit card.
+                </p>
+                <br/> 
+
+                <p>
+                    Your Central Hub for Team Collaboration.
+                </p>
+                <br/> 
+
+                <h2>
+                    Premium Features for Teams.
+                </h2>
+                <br/> 
+
+                <ul>
+                    <li> Collaborate Space for Team.</li>
+                    <li> Create as Unlimited Projects </li>
+                    <li> Invite as unlimited Members </li>
+                    <li> Choose Variety of Templates.</li>
+                    <li> Manage Team and Permissions.</li>
+                </ul>
+                <br/> 
+
+            </div>
+            <!-- p1-child ends -->
+           
+
+        </div>
+        <!-- p2 ends -->
+
+        <div class="p3">
+            <h3>
+                Didn't find what you were looking for?
+            </h3>
+            <br/>
+            <button>
+                Make a Suggestion
+            </button>
+
+            <br/>
+            <br/>
+
+            <h1>Frequently asked questions</h1>
+            <br/>
+
+            <div class="p3-child">
+                <h3>
+                    Does TR offer a Premium free trial?
+                </h3>
+                <p>
+                    Absolutely! Enjoy a free trial of TR Premium to explore its powerful features.
+                </p>
+            </div>
+
+            <div class="p3-child">
+                <h3>
+                    Do you offer any discounted plans?
+                </h3>
+                <p>
+                    Yes, we offer discounts for non-profit organizations and educational institutions.
+                </p>
+            </div>
+
+            <div class="p3-child">
+                <h3>
+                    What payment methods do you accept?
+                </h3>
+                <p>
+                    We accept major credit cards for Standard and Premium subscriptions. For Enterprise plans, please contact our sales team. 
+                </p>
+            </div>
+
+            <div class="p3-child">
+                <h3>
+                    How do I cancel my TR Standard or Premium subscription?
+                </h3>
+                <p>
+                    You can downgrade your subscription at any time. Learn more about cancellation here.
+                </p>
+            </div>
+
+            <div class="p3-child">
+                <h3>
+                    How are users counted towards billing?
+                </h3>
+                <p>
+                    Workspace members and Multi-Board Guests are considered billable. See our pricing page for more details.
+                </p>
+            </div>
+
+            <div class="p3-child">
+                <h3>
+                    Is there an on-premises version of TR?
+                </h3>
+                <p>
+                    TR is a cloud-based product. Access it via web, desktop, or mobile apps.
+                </p>
+            </div>
+
+            <div class="p3-child">
+                
+                <h3>
+                    Can I have TR Standard or Premium for my own account?
+                </h3>
+                <p>
+                    Yes, TR is designed for teams of all sizes, including individuals.
+                </p>
+            </div>
+
+            <div class="p3-child">
+                <h3>
+                    How secure is TR?
+                </h3>
+                <p>
+                    TR is SOC2 Type 2 certified, ISO/IEC 27001 certified, and PCI-DSS certified. Learn more about our security protocols here.
+                </p>
+            </div>
+
+        </div>
+        <!-- p3 ends -->
+        
+        <div class="p4">
+
+            <div class="p4-child1">
+                <img src="assets/p4-img.png" alt="img">
+            </div>
+
+            <div class="p4-child2">
+                <h3>
+                    Enhanced Security and Centralized Management with Atlassian Access
+                </h3>
+                <br/>
+                <p>
+                    SAML Single Sign-On: Streamline login processes for your team.
+                    <br/><br/>
+                    <b>1. Enforced 2FA: 
+                    </b>Strengthen account security with two-factor authentication.
+                    <br/>
+                    <br/>
+                    <b>2. Atlassian Access: </b>
+                    A centralized solution for managing your Atlassian products, including Tr.
+                </p>
+            </div>
+        </div>
+        <!-- p4 ends -->
+
+        
+
+
+
+        <!-- footer start -->
+        <footer>
+
+            <div class="footer-1">
+                <h2>
+                    Trusted by thousands, our 4.5-star rating on the Play Store
+                </h2>
+                <br />
+                <p>
+                    This proves we’re your go-to for seamless task management. Join the satisfied users who’ve already
+                    turned chaos into clarity!
+                </p>
+                <br />
+
+                <button class="start-button">
+                    Start for free
+                </button>
+
+            </div>
+            <!-- footer-1 end -->
+
+            <div class="footer-2">
+                
+
+                <!-- footer about start -->
+                <div class="footer-about">
+
+                    <h3>About Us</h3>
+                    <br />
+                    <p>Start each day with a clear plan. Let us help you turn your to-do list into a done list.</p>
+
+                </div>
+                <!-- footer about end -->
+
+                <!-- footer-Explore start -->
+                <div class="footer-explore">
+
+                    <h3>Explore</h3>
+                    <br />
+
+                    <ul class="footer-explore-ul">
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#features">Features</a>
+                        </li>
+                        <li>
+                            <a href="#categories">Categories</a>
+                        </li>
+                        <li>
+                            <a href="#resources">Resources</a>
+                        </li>
+                        <li>
+                            <a href="#pricing">Pricing</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- footer-Explore end -->
+
+                <!-- footer social start -->
+                <div class="footer-social">
+
+                    <h3>Stay Connected</h3>
+
+                    <div class="social-links">
+
+                        <a href="#">
+                            <i class="fa-brands fa-facebook  icon"></i>
+                        </a>
+                        <br />
+                        <a href="#">
+                            <i class="fa-brands fa-twitter icon"></i>
+                        </a>
+                        <br />
+                        <a href="#">
+                            <i class="fa-brands fa-instagram icon"></i>
+                        </a>
+                        <br />
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin icon"></i>
+                        </a>
+                        <br />
+
+                    </div>
+
+                </div>
+                <!-- footer social end -->
+
+                <div class="footer-tips">
+
+                    <h3>Get Productivity Tips</h3>
+                    <br />
+
+                    <p>Sign up for our newsletter and receive the latest tips, updates, and special offers.</p>
+                    <br />
+
+                    <form>
+
+                        <input type="name" placeholder="Enter your name">
+
+                        <input type="number" placeholder="Enter your number">
+
+                        <input type="email" placeholder="Enter your email">
+                        <br /><br />
+                        <button type="submit">Submit</button>
+
+                    </form>
+
+                </div>
+
+                
+
+            </div>
+            <!-- footer-2 end -->
+
+            <!-- footer-3 start -->
+            <div class="footer-3">
+
+                <p>
+                    © 2024 Your Company Name
+                    |
+                    <a href="#">Privacy Policy</a>
+
+                    |
+                    <a href="#">Terms of Service</a>
+                </p>
+
+                <p>
+                    Today’s Productivity Tip: "Set a timer for each task. It keeps you focused and boosts efficiency."
+                </p>
+
+            </div>
+            <!-- footer 3 end -->
+
+        </footer>
+        <!-- footer end -->
+
+    </div>
+    <!-- d1 end -->
+
+</body>
+
+</html>

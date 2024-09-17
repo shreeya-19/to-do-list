@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource</title>
+    <script src="https://kit.fontawesome.com/590b7d51d6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html , body{
+        
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden; /* Prevent horizontal scroll caused by animation */
+            scroll-behavior: smooth; /* Ensure smooth scrolling */
+        }
+        
+        html {
+            scroll-snap-type: y mandatory;
+        }
+        
+        body {
+            scroll-snap-align: start;
+        }
+        
+        .d1
+        {
+            width: 100%;
+            /* height: 600%; */
+            background-color:whitesmoke;
+        
+            position: relative; /* Allows it to move without affecting other content */
+            
+            animation-name: moveUp;
+            animation-duration: 2s;
+            transition-timing-function: ease-out;
+            animation-fill-mode: forwards;
+        
+        }
+        
+        @keyframes moveUp 
+        {
+            0% 
+            {
+                transform: translateY(100%); /* Start from below the viewport */
+                opacity:0.1 ;
+            }
+        
+            100% 
+            {
+                transform: translateY(0); /* End at its original position */
+                opacity: 1; 
+            }
+        }
+        
+        
+        
+        /* header start */
+        
+        .header{
+            width: 100%;
+            position: sticky;
+            top: 0; 
+            z-index: 1;
+            background-color:whitesmoke;
+        }
+        
+        /* logo header start */
+        .logo-header{
+            width: 100%;
+            height: 60%;
+            padding: 10px;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .horizontal-logo{
+            width: 200px;
+            height: 100%;
+        }
+        
+        
+        .logo-header a
+        {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .start-button-nav{
+            width: 100px;
+            height: 30px;
+            background-color:rgb(28, 30, 30) ;
+            color: white;
+            font-weight: 400; 
+            border-radius: 10px ;
+        }
+        
+        /* logo header end */
+        
+        .nav{
+        
+            width: 100%;
+            height: 50px;
+            /* border: 1px solid black; */
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        .nav-ul{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            /* border: 1px solid black; */
+        }
+        
+        .nav-li
+        {   width: 100%;
+            height: 100%;
+            /* border: 1px solid black; */
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .nav-li:hover{
+        
+            color: aliceblue;
+            background-color: rgb(198, 121, 121);
+        }
+        .sign-in{
+            display: none;
+        }
+        
+        @media (min-width:768px) {
+            .sign-in{
+                display: flex;
+            }
+        }
+        
+        
+        /* nav end */
+        
+        
+        </style>
+        
+
+</head>
+
+<body>
+
+    <div class="d1">
+
+        <header class="header">
+
+            <div class="logo-header">
+                <img src="assets/logo/horizontal logo.png" class="horizontal-logo">
+
+                <div class="sign-in-mob">
+                    <a href="login.html">Log in</a>
+
+                    <button class="start-button-nav"> Start for free</button>
+                </div>
+            </div>
+            <!-- logo header end -->
+
+            <div class="nav">
+                <ul class="nav-ul">
+
+                    <li class="nav-li">
+                        <a href="index.html" class="a-link"> Home </a>
+                    </li>
+
+                    <li class="nav-li">
+                        <a href="feature.html" class="a-link"> Feature </a>
+                    </li>
+
+                    <li class="nav-li">
+                        <a href="categories.html" class="a-link"> Catagories </a>
+                    </li>
+
+                    <li class="nav-li">
+                        <a href="resource.html" class="a-link"> Resources </a>
+                    </li>
+
+                    <li class="nav-li">
+                        <a href="pricing.html" class="a-link"> Pricing </a>
+                    </li>
+
+                    <li class="nav-li sign-in ">
+                        <a href="login.html" class="a-link">Log in</a>
+                    </li>
+
+                    <li class="sign-in ">
+                        <button> Start for free</button>
+                    </li>
+
+                </ul>
+
+                <hr />
+            </div>
+            <!-- nav div end -->
+
+        </header>
+        <!-- header div end -->
+         
+        <!-- r1 start -->
+        <div class="r1">
+
+            <aside class="r1-child1">
+
+                <button class="btn">
+
+                    Your Trello Journey Starts Here
+
+                    <i class="fa-solid fa-caret-down"></i>
+                
+                </button>
+
+                <ol class="ol-items">
+                    <h3>Your Trello Journey Starts Here</h3>
+
+                    <li  class="li-items">
+                        <a href="#">
+                            Learn the Basics
+                        </a>
+                        </li>
+
+                    <li class="li-items">
+                        <a href="#">
+                            Create Your First Project
+                        </a>
+                        </li>
+
+                    <li class="li-items">
+                        <a href="#">
+                            Onboard Your Team
+                        </a>
+                        </li>
+
+                    <li class="li-items">
+                        <a href="#">
+                            Connect with Other Apps
+                        </a>
+                        </li>
+
+                    <li class="li-items">
+                        <a href="#">
+                            Explore Powerful Features
+                        </a>
+                        </li>
+
+                    <li class="li-items">
+                        <a href="#">
+                            Switch Views
+                        </a>
+                        </li>
+
+                    <li class="li-items">
+                        <a href="#">
+                            Automate Your Workflow
+                        </a>
+                        </li>
+
+                    <li class="li-items">
+                        <a href="#">
+                            Manage Permissions
+                        </a>
+                        </li>
+
+                    <li class="li-items">
+                        <a href="#">
+                            Discover Pro Tips
+                        </a>
+                        </li>
+
+
+                </ol>
+
+
+            </aside>
+
+            <div class="r1-child2">
+                <h1>
+                    Your Tr Journey Starts Here: A Beginner's Guide
+                </h1>
+                <br/>
+                <p>
+                    <b>Welcome to Tr!</b> <br/>This guide will teach you everything you need to know about using Tr, from creating your first project to equipping your team with the tools they need to succeed. With easy-to-follow steps, tips, and templates, you'll become a Tr champion in no time.
+                </p>
+                
+                <br/>
+
+                <button class="btn-guide">Go to guide</button>
+                <button class="btn-enterprise">Looking for Enterprise</button>
+                
+
+                <div class="box1">
+                    <div class="step1">
+                        <h3>Your Tr Journey Starts Here</h3>
+                    </div>
+
+                    <div class="step2">
+
+                        <div class="card">
+                            <div class="step-icon">
+                                <i class="fa-solid fa-house"></i>
+                            </div> 
+                            <div class="details">
+                                <p>CHAPTER 1</p>
+                                <h4>Learn the Basics</h4>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="step-icon"> 
+                                <i class="fa-solid fa-file"></i>
+                            </div>
+                            <div class="details">
+                                <p>CHAPTER 2</p>
+                                <h4>Create Your First Project</h4>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="step-icon"> 
+                                <i class="fa-solid fa-share"></i> 
+                            </div>
+                            <div class="details">
+                                <p>CHAPTER 3</p>
+                                <h4>Onboard Your Team </h4>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="step-icon"> 
+                               
+                                <i class="fa-solid fa-folder-tree"></i> 
+                            </div>
+                            <div class="details">
+                                <p>CHAPTER 4</p>
+                                <h4>Connect with Other Apps</h4>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="step-icon"> 
+                                <i class="fa-solid fa-medal"></i>
+                            </div>
+                            <div class="details">
+                                <p>CHAPTER 5</p>
+                                <h4>Explore Powerful Features</h4>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="step-icon"> 
+                                <i class="fa-solid fa-desktop"></i> 
+                            </div>
+                            <div class="details">
+                                <p>CHAPTER 6</p>
+                                <h4>Switch Views</h4>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="step-icon"> 
+                                <i class="fa-solid fa-robot"></i>
+                            </div>
+                            <div class="details">
+                                <p>CHAPTER 7</p>
+                                <h4>Automate Your Workflow</h4>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="step-icon"> 
+                                <i class="fa-solid fa-gear"></i>
+                            </div>
+                            <div class="details">
+                                <p>CHAPTER 8</p>
+                                <h4>Manage Permissions</h4>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="step-icon"> 
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <div class="details">
+                                <p>CHAPTER 9</p>
+                                <h4>Manage Permissions</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- step2 ends -->
+
+                </div>
+                <!-- step ends -->
+
+                <div class="box2">
+                    <div class="box2-child">
+                        <h2>
+                            Mastering Remote Work
+                        </h2>
+                        <br/>
+                        <p>
+                            Discover how to create a thriving remote work environment, boost productivity, and foster strong team connections.
+                        </p>
+                        <br/>
+                        <button>Read more</button>
+                    </div>
+                    <div class=" box2-child ">
+                        <h2>
+                            Ready to Upgrade? Try Premium Free
+                        </h2>
+                        <br/>
+                        <p>
+                            Start your free 14-day trial and unlock the full potential of Tr's premium features.
+                        </p>
+                        <br/>
+                        <button>Try it Today</button>
+                    </div>
+                </div>
+
+                <div class="box3">
+                    <h3>Jumpstart Your Projects with Templates</h3>
+                    <div class="box3-child">
+                        <div style="background-color: rgb(240, 185, 47);" class="template">
+                            <img src="assets/project-management.png" alt="img">
+                            <h4> 
+                                Project Management
+                            </h4>
+                        </div>
+                        <div style="background-color: rgb(60, 192, 235);" class="template">
+                            <img src="assets/business.png" alt="img">
+                            <h4>
+                                Business
+                            </h4>
+                            </div>
+                        <div style="background-color: rgb(244, 44, 147);" class="template">
+                            <img src="assets/sales.png" alt="img">
+                            <h4>
+                                Sales
+                            </h4>
+                            </div>
+                        <div style="background-color: rgb(253, 79, 15);" class="template">
+                            <img src="assets/design.png" alt="img">
+                            <h4>
+                                Design
+                            </h4>
+                            </div>
+                        <div style="background-color: darkgrey;" class="template">
+                            <img src="assets/engineering.png" alt="img">
+                            <h4>
+                                Engineering
+                            </h4>
+                            </div>
+                        <div style="background-color: rgb(142, 218, 244);" class="template">
+                            <img src="assets/marketing.png" alt="img">
+                            <h4>
+                                Marketing
+                            </h4>
+                            </div>
+                    </div>
+
+                    <br/>
+
+                    <button>
+                        Get more Templates
+                    </button>
+                </div>
+
+
+
+
+
+
+
+
+
+
+            </div> 
+            <!-- r1-child2 -->
+        </div>
+        <!-- r1 end -->
+
+        
+
+
+
+        <!-- footer start -->
+        <footer>
+
+            <div class="footer-1">
+                <h2>
+                    Trusted by thousands, our 4.5-star rating on the Play Store
+                </h2>
+                <br />
+                <p>
+                    This proves we’re your go-to for seamless task management. Join the satisfied users who’ve already
+                    turned chaos into clarity!
+                </p>
+                <br />
+
+                <button class="start-button">
+                    Start for free
+                </button>
+
+            </div>
+            <!-- footer-1 end -->
+
+            <div class="footer-2">
+                
+
+                <!-- footer about start -->
+                <div class="footer-about">
+
+                    <h3>About Us</h3>
+                    <br />
+                    <p>Start each day with a clear plan. Let us help you turn your to-do list into a done list.</p>
+
+                </div>
+                <!-- footer about end -->
+
+                <!-- footer-Explore start -->
+                <div class="footer-explore">
+
+                    <h3>Explore</h3>
+                    <br />
+
+                    <ul class="footer-explore-ul">
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#features">Features</a>
+                        </li>
+                        <li>
+                            <a href="#categories">Categories</a>
+                        </li>
+                        <li>
+                            <a href="#resources">Resources</a>
+                        </li>
+                        <li>
+                            <a href="#pricing">Pricing</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- footer-Explore end -->
+
+                <!-- footer social start -->
+                <div class="footer-social">
+
+                    <h3>Stay Connected</h3>
+
+                    <div class="social-links">
+
+                        <a href="#">
+                            <i class="fa-brands fa-facebook  icon"></i>
+                        </a>
+                        <br />
+                        <a href="#">
+                            <i class="fa-brands fa-twitter icon"></i>
+                        </a>
+                        <br />
+                        <a href="#">
+                            <i class="fa-brands fa-instagram icon"></i>
+                        </a>
+                        <br />
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin icon"></i>
+                        </a>
+                        <br />
+
+                    </div>
+
+                </div>
+                <!-- footer social end -->
+
+                <div class="footer-tips">
+
+                    <h3>Get Productivity Tips</h3>
+                    <br />
+
+                    <p>Sign up for our newsletter and receive the latest tips, updates, and special offers.</p>
+                    <br />
+
+                    <form>
+
+                        <input type="name" placeholder="Enter your name">
+
+                        <input type="number" placeholder="Enter your number">
+
+                        <input type="email" placeholder="Enter your email">
+                        <br /><br />
+                        <button type="submit">Submit</button>
+
+                    </form>
+
+                </div>
+
+                
+
+            </div>
+            <!-- footer-2 end -->
+
+            <!-- footer-3 start -->
+            <div class="footer-3">
+
+                <p>
+                    © 2024 Your Company Name
+                    |
+                    <a href="#">Privacy Policy</a>
+
+                    |
+                    <a href="#">Terms of Service</a>
+                </p>
+
+                <p>
+                    Today’s Productivity Tip: "Set a timer for each task. It keeps you focused and boosts efficiency."
+                </p>
+
+            </div>
+            <!-- footer 3 end -->
+
+        </footer>
+        <!-- footer end -->
+
+    </div>
+    <!-- d1 end -->
+
+</body>
+
+</html>

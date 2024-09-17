@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body{
+
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll caused by animation */
+    scroll-behavior: smooth; /* Ensure smooth scrolling */
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    scroll-snap-align: start;
+}
+
+.d1
+{
+    width: 100%;
+    /* height: 600%; */
+    background-color:whitesmoke;
+
+    position: relative; /* Allows it to move without affecting other content */
+    
+    animation-name: moveUp;
+    animation-duration: 2s;
+    transition-timing-function: ease-out;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes moveUp 
+{
+    0% 
+    {
+        transform: translateY(100%); /* Start from below the viewport */
+        opacity:0.1 ;
+    }
+
+    100% 
+    {
+        transform: translateY(0); /* End at its original position */
+        opacity: 1; 
+    }
+}
+
+
+
+/* header start */
+
+.header{
+    width: 100%;
+    height: 150px;
+    position: sticky;
+    top: 0; 
+    z-index: 1;
+    background-color:whitesmoke;
+}
+
+/* logo header start */
+.logo-header{
+    width: 100%;
+    height: 60%;
+    padding: 10px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.horizontal-logo{
+    width: 200px;
+    height: 100%;
+}
+
+.sign-in-mob{
+    width: 150px;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-header a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.start-button-nav{
+    width: 100px;
+    height: 30px;
+    background-color:rgb(28, 30, 30) ;
+    color: white;
+    font-weight: 400; 
+    border-radius: 10px ;
+}
+
+/* logo header end */
+
+.nav{
+
+    width: 100%;
+    height: 40%;
+    /* border: 1px solid black; */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.nav-li
+{   width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-li:hover{
+
+    color: aliceblue;
+    background-color: rgb(198, 121, 121);
+}
+
+.sign-in{
+    display: none;
+}
+
+/* nav end */
+
+
+
+
+
+/* footer start */
+
+footer{
+    width: 100%;
+    height:1300px;
+    background:linear-gradient( whitesmoke, rgb(254, 233, 206),rgb(246, 222, 192));
+}
+
+/* footer 1 start */
+
+.footer-1{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* footer 1 end */
+
+/* footer 2 start */
+
+.footer-2
+{
+    width: 100%;
+    height: 1000px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 1px solid black;
+}
+
+/* footer about start */
+.footer-about
+{
+    width: 100%;
+    height: 12%;
+    padding: 10px;
+    border: 1px solid black;
+}
+/* footer about end */
+
+
+/* footer explore start*/
+
+.footer-explore
+{
+    width: 100%;
+    height: 25%;
+    border: 1px solid black;
+    padding: 10px;
+    
+}
+
+.footer-explore-ul
+{
+    width: 100%;
+    height: 80%;
+    /* background-color: aqua; */
+    list-style: none;
+    line-height: 40px;
+}
+
+.footer-explore-ul a
+{
+    text-decoration: none;
+    color: black;
+}
+
+/* footer explore end */
+
+/* footer social-link start */
+
+.footer-social
+{
+    width: 100%;
+    height: 22%;
+    line-height: 40px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+
+.icon
+{
+    font-size: 20px;
+}
+
+/* footer social link end */
+
+/* footer-tips start */
+
+.footer-tips{
+    width: 100%;
+    height: 37%;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.footer-tips form{
+    text-align: center;
+}
+
+.footer-tips input[type=name] {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.footer-tips input[type=number] {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.footer-tips input[type=email] {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+.footer-tips button
+{   
+    background-color:rgb(96, 9, 159) ;
+    color: aliceblue;
+    padding: 10px;
+}
+
+/* footer tips end */
+
+/* footer-3 start */
+
+.footer-3{
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+/* footer-3 end */
+/* footer end */
+
+/* media for medium devices */
+
+
+
+@media(min-width: 768px) 
+{
+
+    /* header start */
+
+    .header{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid black; */
+        
+    }
+
+    /* logo header start */
+    .logo-header
+    {
+        width: 40%;
+        height: 80%;
+        padding: 10px;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .horizontal-logo{
+        width: 250px;
+        height: 100%;
+    }
+
+    .sign-in-mob
+    {
+        display: none;
+    }
+
+    /* logo header end */
+
+
+    .sign-in
+    {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav button
+    {
+        width: 100px;
+        height: 30px;
+        background-color:rgb(28, 30, 30) ;
+        color: white;
+        font-weight: 400; 
+        border-radius: 10px ;
+    }
+
+    
+
+    /* footer start */
+
+    footer
+    {
+        width: 100%;
+        height:600px;
+        
+    }
+
+    /* footer 1 start */
+
+    .footer-1
+    {
+        height: 150px;
+    }
+
+    /* footer 1 end */
+
+    /* footer 2 start */
+
+    .footer-2
+    {
+        height: 350px;
+        display: flex;
+    }
+
+    .footer-about
+    {
+        height: 100%;
+        border: 1px solid black;
+    }
+    /* footer about end */
+
+
+    /* footer explore start*/
+
+    .footer-explore
+    {
+        height: 100%;
+        border: 1px solid black;
+        
+        
+    }
+
+        .footer-social
+    {
+        width: 100%;
+        height: 100%;
+        line-height: 40px;
+        padding: 10px;
+        border: 1px solid black;
+    }
+    
+    .icon
+    {
+        font-size: 50px;
+    }
+
+    .footer-tips{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        border: 1px solid black;
+    }
+
+    /* footer-3 start */
+
+    .footer-3{
+        width: 100%;
+        height: 100px;
+        /* border: 1px solid black; */
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* footer-3 end */
+
+    /* footer end */
+
+
+
+
+}
+
